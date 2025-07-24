@@ -1,0 +1,41 @@
+@import "tailwindcss"
+
+/* font style css */
+
+.noto {
+  font-family: 'Noto Serif', serif;
+}
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+h1{
+    font-family: 'Noto Serif', serif;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+}
+.flower {
+    position: relative;
+    
+}
+
+.flower img{
+    height: 484px;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    right: -10px
+}
+ .leaf {
+      width:; 
+      transform-origin: bottom right;
+      animation: leaf-swing 5s ease-in-out infinite;
+    }
+
+    @keyframes leaf-swing {
+      0% { transform: rotate(0%); }
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(-1deg); }
+      75% { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
