@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- Tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- style css link -->
@@ -19,7 +19,7 @@
 
 <body class="inter text-zinc-500">
     <section class="container mx-auto">
-        <header>
+        <header> <!--header start-->
             <!-- nav start -->
             <div class="nav-container flex justify-between items-center mt-4">
                 <img src="./assets/afroja's-flower-shop-logo.png" alt="afroja's-flower-shop-logo" class="w-40">
@@ -34,7 +34,8 @@
             </div>
             <!-- nav end -->
             <!-- banner start -->
-            <div class="banner-container flex flex-col-reverse sm:flex-row justify-between items-end gap-8 sm:my-20 sm:h-96">
+            <div
+                class="banner-container flex flex-col-reverse sm:flex-row justify-between items-end gap-8 sm:my-20 sm:h-96">
                 <div class="w-full sm:w-1/2 banner-title">
                     <h1 class="text-3xl md:text-5xl text-orange-600 font-bold"><span
                             class="text-neutral-800">ALWAYS</span> FRESH
@@ -49,7 +50,75 @@
                 </div>
             </div>
             <!-- banner end -->
-        </header>
+        </header> <!--header end-->
+
+        <main> <!--main start-->
+            <div class="flower-section-container text-center my-16">
+                <h2 class="text-orange-600 text-5xl font-bold mb-5">Our <span class="text-neutral-800">Flowers</span>
+                </h2>
+                <p class="text-xl mb-7">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                    <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                <div class="card-container grid grid-cols-2 md:grid-cols-4 gap-5 justify-items-center">
+                    <div class="card">
+                        <img src="./assets/flower-1.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-2.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-3.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-4.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-5.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-6.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-7.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/flower-8.png" alt="flower image">
+                        <h6 class="text-neutral-800 text-lg font-bold mt-3">Godetia</h6>
+                        <h5 class="text-neutral-800 text-xl font-medium mb-3">$ 20 USD</h5>
+                        <button onclick="alert('Flower added to 🛒 cart')"
+                            class="w-full bg-amber-600 text-white py-2.5">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </main> <!--main end-->
+
     </section>
 </body>
 

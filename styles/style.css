@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.container{
+  padding: 1rem;
+}
+
 /* font style css */
 
 .noto {
@@ -8,6 +12,7 @@
 .inter {
   font-family: 'Inter', sans-serif;
 }
+
 h1{
     font-family: 'Noto Serif', serif;
     line-height: 50px;
@@ -15,6 +20,7 @@ h1{
 h2{
     font-family: 'Noto Serif', serif;
 }
+/* banner css start */
 
 .flower img{
     /* height: 484px; */
@@ -35,3 +41,14 @@ h2{
       75% { transform: rotate(3deg); }
       100% { transform: rotate(0deg); }
     }
+
+    /* banner css end */
+
+    /* our flower section css start */
+
+.card{
+  box-shadow: 0 6.4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+    /* our flower section css end */
