@@ -75,8 +75,9 @@ h2 {
 .plant-lover-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 60px;
   margin: 80px 0 50px;
+  position: relative;
 }
 
 .plant-image-container {
@@ -85,7 +86,27 @@ h2 {
   background-position: center;
   width: calc(100% - 10px);
   height: auto;
+  /* position: relative; */
 
+}
+.badge{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -15%;
+  right: 45%;
+}
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.badge {
+  animation: spin360 20s linear infinite;
 }
 
 .plant-text-area {
@@ -249,6 +270,9 @@ h2 {
 /* @media css start */
 
 @media screen and (max-width:640px) {
+  .badge{
+    display: none;
+  }
   .plant-text-area h2 {
     font-size: 2rem;
   }
