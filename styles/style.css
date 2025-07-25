@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.container{
+.container {
   padding: 1rem;
 }
 
@@ -9,46 +9,101 @@
 .noto {
   font-family: 'Noto Serif', serif;
 }
+
 .inter {
   font-family: 'Inter', sans-serif;
 }
 
-h1{
-    font-family: 'Noto Serif', serif;
-    line-height: 50px;
+h1 {
+  font-family: 'Noto Serif', serif;
+  line-height: 50px;
 }
-h2{
-    font-family: 'Noto Serif', serif;
+
+h2 {
+  font-family: 'Noto Serif', serif;
 }
+
 /* banner css start */
 
-.flower img{
-    /* height: 484px; */
-    width: 100%;
-    position: relative;
-    top: 50px;
-    right: -10px
+.flower img {
+  /* height: 484px; */
+  width: 100%;
+  position: relative;
+  top: 50px;
+  right: -10px
 }
- .leaf {
-      transform-origin: bottom right;
-      animation: leaf-swing 5s ease-in-out infinite;
-    }
 
-    @keyframes leaf-swing {
-      0% { transform: rotate(0%); }
-      25% { transform: rotate(3deg); }
-      50% { transform: rotate(-1deg); }
-      75% { transform: rotate(3deg); }
-      100% { transform: rotate(0deg); }
-    }
+.leaf {
+  transform-origin: bottom right;
+  animation: leaf-swing 5s ease-in-out infinite;
+}
 
-    /* banner css end */
+@keyframes leaf-swing {
+  0% {
+    transform: rotate(0%);
+  }
 
-    /* our flower section css start */
+  25% {
+    transform: rotate(3deg);
+  }
 
-.card{
+  50% {
+    transform: rotate(-1deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* banner css end */
+
+/* our flower section css start */
+
+.card {
   box-shadow: 0 6.4px 8px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
 }
 
-    /* our flower section css end */
+/* our flower section css end */
+
+/* flowers & Plants Lover css start */
+.plant-lover-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 50px 0;
+}
+.plant-image-container{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 40%, rgba(233, 90, 8, 0.5) 100%), url('../assets/flower.lover-2.jpg');
+  background-size: cover;
+  background-position: center;
+  width: calc(100% - 10px);
+  height: auto;
+  
+}
+.plant-text-area{
+  background-color: aqua;
+  width: calc(100% - 10px);
+  
+}
+.plant-text-area h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #262626;
+}
+.plant-text-area ul{
+  padding-left: 20px;
+}
+.plant-text-area ul li{
+  font-size: 20px;
+  margin: 12px 0;
+  list-style: disc;
+  /* list-style-position: inside;
+  padding-left: 20px; */
+}
+/* flowers & Plants Lover css end */
